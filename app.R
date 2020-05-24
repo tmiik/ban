@@ -77,7 +77,7 @@ server <- shinyServer(function(input, output, session){
     invalidateLater(100, session)
     update_data()
     #print(my_data)
-    plot(X1 ~ 1, data=my_data[1:60,], ylim=c(-3, 3), las=1, type="l")
+    plot(X1 ~ 1, data=my_data[1:50,], ylim=c(-3, 3), las=1, type="l")
   })
 })
 
